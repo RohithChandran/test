@@ -1,0 +1,29 @@
+#cloud-config
+coreos:
+  etcd2:
+    discovery: https://discovery.etcd.io/a95dfc8717ac2bcd08b9b4ec6056b7a6
+    advertise-client-urls: "http://$private_ipv4:2379"
+    initial-advertise-peer-urls: "http://$private_ipv4:2380"
+    listen-client-urls: "http://0.0.0.0:2379,http://0.0.0.0:4001"
+    listen-peer-urls: "http://$private_ipv4:2380,http://$private_ipv4:7001"
+    data-dir: /var/lib/etcd2
+  fleet:
+    public-ip: $private_ipv4
+    etcd_servers: "http://$private_ipv4:2379"
+  flannel:
+    interface: $private_ipv4
+  units:
+    - name: etcd2.service
+      command: start
+    - name: fleet.service
+      command: start
+    - name: flanneld.service
+      drop-ins:
+        - name: 50-network-config.conf
+          content: |
+            [Service]
+            ExecStartPre=/usr/bin/etcdctl set /coreos.com/network/config \
+              '{ "Network": "10.10.0.0/16" }'
+      command: start
+ssh_authorized_keys:
+  - "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAnjj2LqtjNiowdDprVz8jxVR1mKPy4utd5yfcVOrAYk8Fh9xNFtxrFM6rLWMOMuvc0ncnF+RCLpFSJERfq3srllcvOgarvmLov7+CYRtVTlrb+qKB16Dy6sHtEn+bMH8p3X09y+tOpikFxFnVUB5uAwHer0mopf9x4cKlTi8l8OAE8R1sIlykKDCWHBkXd+fEMlCNZjkJ2m4zosdwUcHeGMoW26DsVLBFRE3YIExBsSTpSHMdgtSHiuhLfvCOlemPZx9R+Ymwjy4Xv229ad3ylPAyhi3GguBSUPNIKJgkhuiUYvoMCiiaOz+0hCnfne32bxCaTqUm5QwJpNQ== rsa-key-20160104"
