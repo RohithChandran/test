@@ -26,4 +26,4 @@ coreos:
               '{ "Network": "10.10.0.0/16" }'
       command: start
 ssh_authorized_keys:
-  - "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAnjj2LqtjNiowdDprVz8jxVR1mKPy4utd5yfcVOrAYk8Fh9xNFtxrFM6rLWMOMuvc0ncnF+RCLpFSJERfq3srllcvOgarvmLov7+CYRtVTlrb+qKB16Dy6sHtEn+bMH8p3X09y+tOpikFxFnVUB5uAwHer0mopf9x4cKlTi8l8OAE8R1sIlykKDCWHBkXd+fEMlCNZjkJ2m4zosdwUcHeGMoW26DsVLBFRE3YIExBsSTpSHMdgtSHiuhLfvCOlemPZx9R+Ymwjy4Xv229ad3ylPAyhi3GguBSUPNIKJgkhuiUYvoMCiiaOz+0hCnfne32bxCaTqUm5QwJpNQ== rsa-key-20160104"
+  - "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAnjj2LqtjNiowdDprVz8/jxVR1mKPy4utd5yfcVOrAYk8Fh9xNFtxrFM6rLWMO/Muvc0ncnF+RCLpFSJE/Rfq3srllcvOgarvmLov7+CYRtVTlrb+qKB16Dy6sHtEn+bMH8p3X09y+tOpikFxFnVUB5uAwH/er0mopf9x4cKlTi8l8OAE8R1sIlykKDCWHBkXd+fEMlCNZjkJ2m4z/osdwUcHeGMoW26D/sVLBFRE3YIExBsSTpSHMdgtSHiuhLfvCOlemPZx9R+Ymwjy4Xv229a/d3ylPAyhi3GguBSUPNIKJgkhuiUYvoMCiiaOz+0hCnfne32bxCaTqUm5QwJpNQ== imported-openssh-key"
