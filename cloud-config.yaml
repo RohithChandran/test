@@ -26,4 +26,4 @@ coreos:
               '{ "Network": "10.10.0.0/16" }'
       command: start
 ssh_authorized_keys:
-  - "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAnjj2LqtjNiowdDprVz8/jxVR1mKPy4utd5yfcVOrAYk8Fh9xNFtxrFM6rLWMO/Muvc0ncnF+RCLpFSJE/Rfq3srllcvOgarvmLov7+CYRtVTlrb+qKB16Dy6sHtEn+bMH8p3X09y+tOpikFxFnVUB5uAwH/er0mopf9x4cKlTi8l8OAE8R1sIlykKDCWHBkXd+fEMlCNZjkJ2m4z/osdwUcHeGMoW26D/sVLBFRE3YIExBsSTpSHMdgtSHiuhLfvCOlemPZx9R+Ymwjy4Xv229a/d3ylPAyhi3GguBSUPNIKJgkhuiUYvoMCiiaOz+0hCnfne32bxCaTqUm5QwJpNQ== imported-openssh-key"
+  - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOYAJq8CPJTjaPbx4MB1v40UB8P1ZLPK59JuUpLb8vRl+iQOowq+IVV1euRu5kJaLyMrk9xPwC7+SVdFVQS6zHHaH08Jc9vS6cRrs4vBkMQ/anVhya7NfT1SKL1i8YsZ4Qkf7J2CMAcluGnyeOeYg9rkSWdKyi8u/7MnbQj5atcKGz/ogSuj4VIWDMcN3uSHxxTpih8B3Y/lgV4tUKnbbFg4bRlfgvHLVSraUHCQMtm1Fbnl8UugQwbJoSaQVoQ8E2WRUV7gAfh2AdplNz98yFY6BaZzKoSwFE3kCpEWuUDILb/BVVPYUZHM8X/Jhoc1VcqyUnaL+GNvh+LXDd+qLB root@rohith-PC"
